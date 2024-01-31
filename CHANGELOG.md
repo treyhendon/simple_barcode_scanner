@@ -41,3 +41,6 @@
 
 ## 0.0.9
 * Thanks to [treyhendon](https://github.com/treyhendon). Added UPC Barcode support [41](https://github.com/CodingWithTashi/simple_barcode_scanner/issues/41)
+
+## 0.0.11
+Forked version published for use in Flutterflow

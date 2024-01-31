@@ -1,3 +1,76 @@
+# simple_barchode_scanner_flutterflow
+
+This is a fork of `simple_barcode_scanner` that was built to be compatible with FlutterFlow.
+
+## Getting started
+
+```dart
+simple_barcode_scanner: ^0.0.11
+
+```   
+Import the library:
+```dart
+import 'package:simple_barcode_scanner_flutterflow/simple_barcode_scanner_flutterflow.dart';
+
+```
+## Usage   
+
+```
+// Begin custom widget code
+// DO NOT REMOVE OR MODIFY THE CODE ABOVE!
+
+import 'package:simple_barcode_scanner/simple_barcode_scanner.dart';
+
+class SimpleBarcodeScanner extends StatefulWidget {
+  const SimpleBarcodeScanner({
+    super.key,
+    this.width,
+    this.height,
+  });
+
+  final double? width;
+  final double? height;
+
+  @override
+  State<SimpleBarcodeScanner> createState() => _SimpleBarcodeScannerState();
+}
+
+class _SimpleBarcodeScannerState extends State<SimpleBarcodeScanner> {
+  String result = '';
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ElevatedButton(
+              onPressed: () async {
+                var res = await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SimpleBarcodeScannerPage(),
+                    ));
+                setState(() {
+                  if (res is String) {
+                    result = res;
+                  }
+                });
+              },
+              child: const Text('Open Scanner'),
+            ),
+            Text('Barcode Result: $result'),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```  
+
+_Original README below_
+---
+
 # simple_barcode_scanner 
 
 simple_barcode_scanner that let you scan barcode and qr code in mobile,web and windows.
