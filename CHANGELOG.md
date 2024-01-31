@@ -53,3 +53,6 @@ Commit downgrade
 
 ## 0.0.12
 Revert package downgrades and correct example usage in README
+
+## 0.0.13
+Does need downgraded packages
