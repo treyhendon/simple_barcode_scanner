@@ -50,3 +50,6 @@ Downgrade some packages
 
 ## 0.0.12-dev.2
 Commit downgrade
+
+## 0.0.12
+Revert package downgrades and correct example usage in README

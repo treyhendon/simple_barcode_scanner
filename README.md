@@ -5,7 +5,7 @@ This is a fork of `simple_barcode_scanner` that was built to be compatible with 
 ## Getting started
 
 ```dart
-simple_barcode_scanner: ^0.0.12-dev.2
+simple_barcode_scanner_flutterflow: ^0.0.12
 
 ```   
 Import the library:
@@ -19,7 +19,7 @@ import 'package:simple_barcode_scanner_flutterflow/simple_barcode_scanner_flutte
 // Begin custom widget code
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
-import 'package:simple_barcode_scanner/simple_barcode_scanner.dart';
+import 'package:simple_barcode_scanner_flutterflow/simple_barcode_scanner_flutterflow.dart';
 
 class SimpleBarcodeScanner extends StatefulWidget {
   const SimpleBarcodeScanner({
@@ -66,7 +66,7 @@ class _SimpleBarcodeScannerState extends State<SimpleBarcodeScanner> {
     );
   }
 }
-```  
+```
 
 _Original README below_
 ---
