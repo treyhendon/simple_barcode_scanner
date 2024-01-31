@@ -5,7 +5,7 @@ This is a fork of `simple_barcode_scanner` that was built to be compatible with 
 ## Getting started
 
 ```dart
-simple_barcode_scanner: ^0.0.11
+simple_barcode_scanner: ^0.0.12-dev.2
 
 ```   
 Import the library:

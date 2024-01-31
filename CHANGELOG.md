@@ -44,3 +44,9 @@
 
 ## 0.0.11
 Forked version published for use in Flutterflow
+
+## 0.0.12-dev.1
+Downgrade some packages
+
+## 0.0.12-dev.2
+Commit downgrade
