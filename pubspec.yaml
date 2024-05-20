@@ -1,8 +1,8 @@
-name: simple_barcode_scanner
-description: Scanner plugin for Barcode/QR code. Scan using flutter_barcode_scanner for mobile device and html5-qrcode for web and windows
+name: simple_barcode_scanner_flutterflow
+description: Version of simple_barcode_scanner built for Flutterflow
 version: 0.1.1
-homepage: https://github.com/CodingWithTashi/simple_barcode_scanner
-issue_tracker: https://github.com/CodingWithTashi/simple_barcode_scanner/issues
+homepage: https://github.com/treyhendon/simple_barcode_scanner
+issue_tracker: https://github.com/treyhendon/simple_barcode_scanner/issues
 
 platforms:
   android:
@@ -19,8 +19,10 @@ dependencies:
     sdk: flutter
   # Flutter window webview
   webview_windows: ^0.3.0
-  # Barcode scanner for android and ios
-  flutter_barcode_scanner: ^2.0.0
+  # Flutterflow barcode scanner for android and ios
+  flutter_barcode_scanner: 
+    git:
+      url: https://github.com/FlutterFlow/flutter_barcode_scanner
   #Get assets path for window platform
   path: ^1.8.3
   #checking permissions
